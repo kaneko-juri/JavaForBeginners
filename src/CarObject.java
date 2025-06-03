@@ -1,24 +1,39 @@
+import java.util.Vector;
 
 public class CarObject extends MyFrame {
 	
 	public void run() {
 		
-		Car car1 = new Car(50, 50, 5, 0);
+		Vector<Car> cars = new Vector<Car>();
 		
-		Car car2 = new Car(400, 200,-5,0);
+		for (int i = 0; i < 5; i++) {
+			
+			int y = 50 + i * 150;
+			int vx = i + 1;
+			
+			cars.add(new Car(0,y,vx,0));
+			
+		}
 		
-		for(int i = 0; i < 100; i++) {
+		for (int i = 0; i < 100; i++) {
 			
 			clear();
 			
-			car1.draw(this);
-			car2.draw(this);
-			
-			car1.move();
-			car2.move();
+			for (int j = 0; j < cars.size(); j++) {
+				
+				cars.get(j).draw(this);
+				cars.get(j).move();
+				
+			}
 			
 			sleep(0.1);
+			
 		}
-	}
+		
+		
+		
+		
+		}
+
 
 }

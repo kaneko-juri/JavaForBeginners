@@ -1,9 +1,9 @@
 
-public class Car {
+public class Car{
 
 	int x,y,vx,vy;
 	
-	public Car (int x, int y, int vx, int vy) {
+	public Car (int x,int y,int vx, int vy) {
 		
 		this.x = x;
 		this.y = y;
@@ -25,6 +25,11 @@ public class Car {
 		
 		x += vx;
 		y += vy;
+		
 	}
+		
+		
+	
+	
 	
 }
