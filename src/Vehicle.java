@@ -10,19 +10,39 @@ public class Vehicle {
 		this.vx = vx;
 		this.vy =vy;
 		
-		
 	}
 	
-	
-	
-	
-	
-	
-	public void move() {
+	public void move(MyFrame frame) {
 		
 		x += vx;
 		y += vy;
 		
+		if (x > frame.getWidth()) {
+			
+			x -= frame.getWidth() + 100;
+			
+		}
+		
+		if (x < -100) {
+			
+			x += frame.getWidth() + 100;
+			
+		}
 	}
+	
+	
+	public void draw(MyFrame frame) {
+		// TODO 自動生成されたメソッド・スタブ
+		
+	}
+
+
+
+
+
+
+
+
+	
 	
 }
