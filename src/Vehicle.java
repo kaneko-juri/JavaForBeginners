@@ -17,17 +17,7 @@ public class Vehicle {
 		x += vx;
 		y += vy;
 		
-		if (x > frame.getWidth()) {
-			
-			x -= frame.getWidth() + 100;
-			
-		}
 		
-		if (x < -100) {
-			
-			x += frame.getWidth() + 100;
-			
-		}
 	}
 	
 	
